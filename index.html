@@ -47,9 +47,70 @@
       }
     </style>
   </head>
-  <body>
-    <header></header>
-    <main></main>
+  <body class="mt-6">
+    <header
+      class="container px-4 md:px-10 lg:px-32 mx-auto space-y-5 md:space-y-12"
+    >
+      <!-- navbar -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a class="text-[#FF4240] font-bold">Home</a></li>
+                <li><a class="text-[#424247]">About</a></li>
+                <li><a class="text-[#424247]">Pages</a></li>
+                <li><a class="text-[#424247]">Blog</a></li>
+                <li><a class="text-[#424247]">Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl"
+              ><img src="./Images/logo.png" alt="logo" class="w-28 md:w-40"
+            /></a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-[#FF4240] font-bold">Home</a></li>
+              <li><a class="text-[#424247]">About</a></li>
+              <li><a class="text-[#424247]">Pages</a></li>
+              <li><a class="text-[#424247]">Blog</a></li>
+              <li><a class="text-[#424247]">Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-3">
+            <img
+              src="./Images/search.png"
+              alt="search"
+              class="hidden md:inline-block"
+            />
+            <a
+              class="btn bg-[#FF4240] text-white font-bold py-0 lg:py-4 rounded-lg hover:bg-red-600"
+              >Get Ticket</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container px-5 md:px-20 lg:px-32 mx-auto"></main>
     <footer></footer>
   </body>
 </html>
