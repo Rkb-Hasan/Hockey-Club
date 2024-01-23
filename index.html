@@ -19,7 +19,11 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-
+    <!-- fon-awesome-link -->
+    <script
+      src="https://kit.fontawesome.com/47ec1696ac.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- css styles -->
     <style>
       body {
@@ -217,11 +221,11 @@
           <!-- progress-1 -->
           <div class="text-center space-y-6">
             <div
-              class="radial-progress text-red-500 font-extrabold te"
+              class="radial-progress text-red-500 rotate-180"
               style="--value: 87"
               role="progressbar"
             >
-              70%
+              <span class="text-black font-extrabold rotate-180"> 87%</span>
             </div>
             <div class="space-y-2 md:space-y-4">
               <h3 class="text-xl font-semibold text-[#131318]">
@@ -236,15 +240,15 @@
           <!-- progress-2 -->
           <div class="text-center space-y-6">
             <div
-              class="radial-progress text-green-500"
+              class="radial-progress text-green-500 rotate-180"
               style="--value: 95"
               role="progressbar"
             >
-              95%
+              <span class="text-black font-extrabold rotate-180"> 95%</span>
             </div>
             <div class="space-y-2 md:space-y-4">
               <h3 class="text-xl font-semibold text-[#131318]">
-                Prayer Facility
+                Experienced Coach
               </h3>
               <p class="md:lg-base text-base">
                 Amet consectetur. Condimentum <br />dignissim adipiscing .
@@ -254,15 +258,15 @@
           <!-- progress-3 -->
           <div class="text-center space-y-6">
             <div
-              class="radial-progress text-yellow-500"
+              class="radial-progress text-yellow-500 rotate-180"
               style="--value: 90"
               role="progressbar"
             >
-              90%
+              <span class="text-black font-extrabold rotate-180"> 90%</span>
             </div>
             <div class="space-y-2 md:space-y-4">
               <h3 class="text-xl font-semibold text-[#131318]">
-                Prayer Facility
+                Senior Player
               </h3>
               <p class="md:lg-base text-base">
                 Amet consectetur. Condimentum <br />dignissim adipiscing .
@@ -272,15 +276,15 @@
           <!-- progress-4 -->
           <div class="text-center space-y-6">
             <div
-              class="radial-progress text-blue-500"
+              class="radial-progress text-blue-500 rotate-180"
               style="--value: 80"
               role="progressbar"
             >
-              80%
+              <span class="text-black font-extrabold rotate-180"> 80%</span>
             </div>
             <div class="space-y-2 md:space-y-4">
               <h3 class="text-xl font-semibold text-[#131318]">
-                Prayer Facility
+                Training Ground
               </h3>
               <p class="md:lg-base text-base">
                 Amet consectetur. Condimentum <br />
@@ -292,7 +296,7 @@
       </section>
 
       <!-- Program Sections -->
-      <section class="space-y-6 md:space-y-10">
+      <section class="space-y-6 md:space-y-10 mt-6 md:mt-0">
         <div class="border-b border-t border-dashed border-[#D0D0D1]">
           <div
             class="text-center mx-auto w-[292px] md:w-[560px] py-6 md:py-8 space-y-4 md:space-y-6"
@@ -372,7 +376,7 @@
         </div>
 
         <!-- Get in Touch grid container -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-4">
           <!-- contact flex container -->
           <div
             class="flex flex-col p-6 md:p-12 gap-4 md:gap-6 border border-[#1313181a] rounded-2xl"
@@ -410,7 +414,7 @@
           </div>
 
           <!-- form grid container  -->
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 flex-1">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <!-- input-div -->
             <div class="space-y-4">
               <label for="name" class="text-[#131318] font-bold text-xl"
@@ -424,6 +428,7 @@
                 class="p-5 lg-base font-normal bg-[#13131808] rounded-lg w-full"
               />
             </div>
+            <!-- input-div -->
             <div class="space-y-4">
               <label for="name" class="text-[#131318] font-bold text-xl"
                 >Your Email</label
@@ -436,6 +441,7 @@
                 class="p-5 lg-base font-normal bg-[#13131808] rounded-lg w-full"
               />
             </div>
+            <!-- input-div -->
             <div class="space-y-4">
               <label for="name" class="text-[#131318] font-bold text-xl"
                 >Subject</label
@@ -448,6 +454,7 @@
                 class="p-5 lg-base font-normal bg-[#13131808] rounded-lg w-full"
               />
             </div>
+            <!-- input-div -->
             <div class="space-y-4">
               <label for="name" class="text-[#131318] font-bold text-xl"
                 >Phone Number</label
@@ -460,7 +467,7 @@
                 class="p-5 lg-base font-normal bg-[#13131808] rounded-lg w-full"
               />
             </div>
-
+            <!-- Text-area div -->
             <div class="space-y-4 md:col-span-2">
               <label for="name" class="text-[#131318] font-bold text-xl"
                 >Message</label
@@ -468,15 +475,35 @@
               <textarea
                 name="name"
                 id="name"
-                rows="10"
                 placeholder="Write your message"
-                class="p-5 lg-base font-normal bg-[#13131808] rounded-lg w-full"
+                class="p-5 lg-base font-normal bg-[#13131808] rounded-lg w-full h-[30vh] md:h-[40vh] lg:h-[50vh]"
               ></textarea>
+            </div>
+
+            <!-- bottom btn -->
+            <div class="space-y-4 md:col-span-2">
+              <input
+                type="submit"
+                value="Send Message"
+                class="bg-[#FF4240] py-2 text-center text-white font-bold text-xl rounded-lg w-full"
+              />
             </div>
           </div>
 
           <!-- social links container -->
-          <div></div>
+          <div
+            class="lg:col-span-2 bg-[#13131808] rounded-xl py-6 md:py-8 text-center space-y-4 md:space-y-5"
+          >
+            <h3 class="text-[#131318] text-2xl font-extrabold">Social Media</h3>
+
+            <!-- icon-flex-container -->
+            <div class="flex gap-4 justify-center items-center">
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
